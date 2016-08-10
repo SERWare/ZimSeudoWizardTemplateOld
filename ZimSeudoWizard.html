@@ -49,12 +49,23 @@
 <body>
 
 <!--[% FOR page IN pages %]-->
+    [% path=anchor(page) %]
+    [% nodes=path.split(":") %]
 <!-- Header -->
 <div class='header'>
+    <h1>[% nodes.0 %]</h1>
 </div>
 
 <div class="menu">
-[% index() %]
+    [% FOR node IN nodes %]
+    [% IF loop.last %]
+    <p>[% node %]</p>
+    [% ELSE %]
+    [% dir=node.rstrip() %]
+    [% dir=dir.replace(" ","_") %]
+    <p><a href='[% FOR i IN range(loop.size,loop.count,-1) %]../[% END %][% GET dir %].html'>[% node %]</a></p>
+    [% END %]
+    [% END %]
 </div>
 
 [% options.empty_lines = "default" %]
