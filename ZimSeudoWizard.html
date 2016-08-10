@@ -84,26 +84,7 @@
 	<br />
 
 	<div class='page-footer'>
-	<!--[% FOR link IN page.backlinks %]-->
-		[% IF loop.first %]<b>Backlinks:</b>[% END %]
-
-		<a href='[% uri(link) %]'>[% link.name %]</a>
-
-		[% IF loop.last %]<br /><br />[% END %]
-	<!--[% END %]-->
-
-	<!--[% FOR file IN page.attachments %]-->
-		[% IF loop.first %]
-			<b>Attachments:</b>
-			<table>
-		[% END %]
-
-			<tr><td><a href='[% uri(file) %]'>[% file.basename %]</a></td><td>&nbsp;</td><td>[% file.size %]</td></tr>
-
-		[% IF loop.last %]
-			</table>
-		[% END %]
-	<!--[% END %]-->
+        <a href="javascript:history.back()">Go Back</a>
 	</div>
 
 	[% IF not loop.last %]<hr />[% END %]
