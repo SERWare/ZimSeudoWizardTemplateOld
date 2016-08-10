@@ -48,6 +48,7 @@
 </head>
 <body>
 
+<!--[% FOR page IN pages %]-->
 <!-- Header -->
 <div class='header'>
 </div>
@@ -61,7 +62,6 @@
 <!-- Wiki content -->
 
 <div class='pages'>
-<!--[% FOR page IN pages %]-->
 	<div class='heading'>
 	<h1>[% page.title %] <a name='[% anchor(page) %]'></a></h1>
 	</div>
@@ -97,8 +97,8 @@
 
 	[% IF not loop.last %]<hr />[% END %]
 
-<!--[% END %]-->
 </div>
 
+<!--[% END %]-->
 </body>
 </html>
