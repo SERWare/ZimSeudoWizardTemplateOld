@@ -6,7 +6,7 @@ I call it "seudowizard" because it does not work properly as a true wizard: it o
 
 The requirement is that each Zim Guide Page shows a somewhat decorated list of nested links (links prefixed by "+" to child pages) in the order required.
 
-To assist the user, instead of showing the Zim Standard Content Index in the Menu Panel, the template shows a vertical breadcrumb path of links from root to the current page. Although it is not completely necessary, header and breadcrumb panel are generated as fixed panels so that the user knows what step in the sequence is being made.
+To assist the user, instead of showing the Zim Standard Content Index in the Menu Panel, the template shows a vertical breadcrumb path of links from root to the current page. Although it is not completely necessary, header and breadcrumb panel are generated as fixed panels while content can be scrolled, so that the user knows what step in the sequence is being made.
 
 WARNING: Currently, the template does not support the option "export all pages to a single file.
 
