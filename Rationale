@@ -7,3 +7,10 @@ Waiting for the day that the files and folders in the operating system you can s
 1. Add a prefix indicating the order of child in parent sequence instead the entire path to the child (ie: just 1 instead 1.2.1).
 2. To rename the least possible, do not add order prefixes until the document is very mature.
 
+Anyway, there are some documents organized in the sequence of steps to achieve a goal (for example, a software installation manual). And the case is that, after give many turns to the Zim export process, I have found a trick to show the sequence of steps without prefixing the titles of each step in the sequence.
+
+The Trick uses to assumptions:
+
+
+
+
